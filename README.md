@@ -33,3 +33,22 @@
 - 데이터 유효성 체크, 데이터베이스의 아이템을 생성하는 등의 작업을 처리
 - controller 에서 주로 사용되고, 처음에 constructor로 생성해줘야 한다.
 - nest g service boards --no-spec
+
+> Pipe
+> : @Injectable() 데코레이터로 주석이 달린 클래스
+
+    data transformation 과 data validation 을 위해서 사용 됩니다.
+
+- Binding Pipes
+
+  - Handler-level Pipes > @UsePipes()
+  - Parameter-level Pipes > @Body(name, ParameterPipe)
+  - Global-level Pipes > app.useGlobalPipes(GlobalPipes)
+
+- Built-in Pipes
+  - ValidationPipe
+  - ParseIntPipe
+  - ParseBoolPipe
+  - ParseArrayPipe
+  - ParseUUIDPipe
+  - DefaultValuePipe
