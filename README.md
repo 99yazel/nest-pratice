@@ -46,9 +46,16 @@
   - Global-level Pipes > app.useGlobalPipes(GlobalPipes)
 
 - Built-in Pipes
+
   - ValidationPipe
   - ParseIntPipe
   - ParseBoolPipe
   - ParseArrayPipe
   - ParseUUIDPipe
   - DefaultValuePipe
+
+- Repository
+  : 레포지토리는 엔터티 객체와 함께 작동하며 엔티티 찾기, 삽입, 업데이트, 삭제 등을 처리
+
+- 데이터베이스에 관련된 일을 서비스가 아닌 레포지토리에서 한다
+  - 레포지토리 패턴
